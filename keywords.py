@@ -12,15 +12,27 @@ import os
 import argparse
 
 
+# 是否文本
+def is_text(file_path):
+    if os.path.isdir(file_path):
+        print('Is directory: {}'.format(file_path))
+        return False
+    elif file_path[-4:] == '.pyc':
+        print('Not a text file: {}'.format(file_path))
+        return False
+    else:
+        return True
+
+
 # 单文件查询关键字信息
 def check_one_file(file_path, keywords):
     print('File path: {}'.format(file_path))
-    with open(file_path, 'r') as f:
+    with open(file_path, 'r', encoding='utf-8') as f:
         idx_line = 1
         for line in f:
             for keyword in keywords:
                 if keyword in line:
-                    print('\tline: {}; keyword: {}'.format(idx_line, keyword))
+                    print('\tline {}, keyword: {}'.format(idx_line, keyword))
             idx_line += 1
 
 
@@ -38,8 +50,8 @@ if __name__ == '__main__':
 
     # 遍历项目文件
     for filename in os.listdir(project_path):
-        if filename[0] != '.':
-            file_path = os.path.join(project_path, filename)
+        file_path = os.path.join(project_path, filename)
+        if is_text(file_path):
             check_one_file(file_path, keywords)
 
 
