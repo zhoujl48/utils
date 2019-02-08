@@ -10,6 +10,11 @@ __usage__ = "python keywords.py file_path -k keyword_1 keyword_2 ..."
 
 import os
 import argparse
+import io
+import sys
+
+# Unix系统打印中文
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer,encoding='utf-8')
 
 
 # 是否文本
@@ -32,7 +37,7 @@ def check_one_file(file_path, keywords):
         for line in f:
             for keyword in keywords:
                 if keyword in line:
-                    print('\tline {}, keyword: {}'.format(idx_line, keyword))
+                    print('\tLine {}, Keyword: {}, Content: {}'.format(idx_line, keyword, line))
             idx_line += 1
 
 
