@@ -41,8 +41,8 @@ if __name__ == '__main__':
     # 参数
     parser = argparse.ArgumentParser('Check keywords in project'
                                      'Usage: python keywords.py file_path -k keyword_1 keyword_2 ...')
-    parser.add_argument('project_path')
-    parser.add_argument('-k', '--keywords', nargs='+')
+    parser.add_argument('project_path', help='Source of project where keywords need checking')
+    parser.add_argument('-k', '--keywords', nargs='+', help='List of keywords')
     args = parser.parse_args()
     project_path = args.project_path
     keywords = args.keywords
