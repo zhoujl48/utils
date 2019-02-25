@@ -1,0 +1,31 @@
+INFO: 02-25 19:50:08: keywords.py:43 * 4603753920 Start checking file path: keywords.py
+INFO: 02-25 19:50:08: keywords.py:49 * 4603753920 	Line 20, Keyword: logg, Content: import logging
+
+INFO: 02-25 19:50:08: keywords.py:49 * 4603753920 	Line 32, Keyword: logg, Content:         logging.info('Is directory: {}'.format(file_path))
+
+INFO: 02-25 19:50:08: keywords.py:49 * 4603753920 	Line 35, Keyword: logg, Content:         logging.info('Not a text file: {}'.format(file_path))
+
+INFO: 02-25 19:50:08: keywords.py:49 * 4603753920 	Line 43, Keyword: logg, Content:     logging.info('Start checking file path: {}'.format(file_path))
+
+INFO: 02-25 19:50:08: keywords.py:49 * 4603753920 	Line 49, Keyword: logg, Content:                     logging.info('\tLine {}, Keyword: {}, Content: {}'.format(idx_line, keyword, line))
+
+INFO: 02-25 19:50:08: keywords.py:49 * 4603753920 	Line 79, Keyword: logg, Content:             logging.warning('Not a text file: {}'.format(file_path))
+
+INFO: 02-25 19:50:52: keywords.py:43 * 4804232640 Start checking file path: keywords.py
+INFO: 02-25 19:50:52: keywords.py:49 * 4804232640 	Line 20, Keyword: logg, Content: import logging
+INFO: 02-25 19:50:52: keywords.py:49 * 4804232640 	Line 32, Keyword: logg, Content: logging.info('Is directory: {}'.format(file_path))
+INFO: 02-25 19:50:52: keywords.py:49 * 4804232640 	Line 35, Keyword: logg, Content: logging.info('Not a text file: {}'.format(file_path))
+INFO: 02-25 19:50:52: keywords.py:49 * 4804232640 	Line 43, Keyword: logg, Content: logging.info('Start checking file path: {}'.format(file_path))
+INFO: 02-25 19:50:52: keywords.py:49 * 4804232640 	Line 49, Keyword: logg, Content: logging.info('\tLine {}, Keyword: {}, Content: {}'.format(idx_line, keyword, line.strip()))
+INFO: 02-25 19:50:52: keywords.py:49 * 4804232640 	Line 79, Keyword: logg, Content: logging.warning('Not a text file: {}'.format(file_path))
+INFO: 02-25 19:51:12: keywords.py:43 * 4571252160 Start checking file path: keywords.py
+INFO: 02-25 19:51:12: keywords.py:49 * 4571252160 Line 20, Keyword: logg, Content: import logging
+INFO: 02-25 19:51:12: keywords.py:49 * 4571252160 Line 32, Keyword: logg, Content: logging.info('Is directory: {}'.format(file_path))
+INFO: 02-25 19:51:12: keywords.py:49 * 4571252160 Line 35, Keyword: logg, Content: logging.info('Not a text file: {}'.format(file_path))
+INFO: 02-25 19:51:12: keywords.py:49 * 4571252160 Line 43, Keyword: logg, Content: logging.info('Start checking file path: {}'.format(file_path))
+INFO: 02-25 19:51:12: keywords.py:49 * 4571252160 Line 49, Keyword: logg, Content: logging.info('Line {}, Keyword: {}, Content: {}'.format(idx_line, keyword, line.strip()))
+INFO: 02-25 19:51:12: keywords.py:49 * 4571252160 Line 79, Keyword: logg, Content: logging.warning('Not a text file: {}'.format(file_path))
+INFO: 02-25 19:51:58: keywords.py:43 * 4400207296 Start checking file path: keywords.py
+INFO: 02-25 19:51:58: keywords.py:49 * 4400207296 Line 13, Keyword: U, Content: Usage: python keywords.py file_path -k keyword_1 keyword_2 ...
+INFO: 02-25 19:51:58: keywords.py:49 * 4400207296 Line 25, Keyword: U, Content: # Unix系统打印中文
+INFO: 02-25 19:51:58: keywords.py:49 * 4400207296 Line 57, Keyword: U, Content: 'Usage: python keywords.py file_path -k keyword_1 keyword_2 ...')
